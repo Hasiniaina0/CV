@@ -72,6 +72,9 @@ const Badges = () => {
       <Badge bg="success" className="d-flex align-items-center fs-6">
         Redux
       </Badge>
+      <Badge bg="danger" className="d-flex align-items-center fs-6">
+        TDD
+      </Badge>
     </Stack>
   );
 };
