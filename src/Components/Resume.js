@@ -3,12 +3,12 @@ import Card from "react-bootstrap/Card";
 const Resume = () => {
   return (
     <Card>
-      <Card.Header>RESUME DU PROFIL </Card.Header>
+      <Card.Header>RESUME DU PROFIL</Card.Header>
       <Card.Body>
         <Card.Text>
           Développeuse passionnée avec une solide formation en génie logiciel et
-          une expérience pratique en création d’applications web et mobiles.
-          Compétences éprouvées en gestion de projets, développement fullstack
+          une expérience pratique en création d’applications web et mobiles
+          fullstack. Compétences éprouvées en gestion de projets, développement
           et méthodes agiles. À la recherche d'un emploi afin de mettre à profit
           et approfondir mes compétences techniques.
         </Card.Text>
