@@ -49,16 +49,10 @@ const Experience = () => {
         ))}
         <Card.Title>Auto-entrepreneuse</Card.Title>
         <Card.Subtitle className="mb-2 text-muted pl-6 mt-3">
-          <p>
-            - Création et gestion d’une entreprise de vente de pièces et
-            accessoires de moto, de produits alimentaires, et de mode en ligne |
-            2014-2021
-          </p>
-          <p>
-            {" "}
-            - Gestion des stocks, des budgets, des approvisionnements, des
-            livraisons et des clients | 2014-2021
-          </p>
+          <p>- Création et gestion d’une entreprise de vente de :</p>
+          <p className="mr-8 pr-6">Pièces et accessoires de moto | 2014-2021</p>
+          <p>Produits alimentaires, | 2014-2021 </p>
+          <p>et de mode en ligne | 2014-2021</p>
         </Card.Subtitle>
       </Card.Body>
     </Card>
