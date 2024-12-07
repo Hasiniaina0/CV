@@ -24,9 +24,7 @@ const Header = () => {
           <Col sm className="mt-4 sm:mt-0">
             <Row>
               <h1 className="text-xl font-bold">HARINIRINA Faramalala H.</h1>
-              <p className="text-lg items-center justify-center">
-                Développeuse React
-              </p>
+              <p className="text-lg ">Développeuse React</p>
             </Row>
           </Col>
         </Row>
