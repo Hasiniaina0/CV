@@ -1,78 +1,211 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Badge from "react-bootstrap/Badge";
 import Stack from "react-bootstrap/Stack";
 
 const Badges = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Durée de l'animation en ms
+    });
+  }, []);
+
   return (
     <Stack
       direction="horizontal"
       gap={3}
-      className="mt-2 p-1  flex-wrap justify-center"
+      className="flex-wrap justify-center mt-10  items-center"
     >
-      <Badge bg="primary" className="d-flex align-items-center pt-10 fs-6">
+      <Badge
+        pill
+        bg="primary"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         JavaScript
       </Badge>
-      <Badge bg="secondary" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="secondary"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         HTML
       </Badge>
-      <Badge bg="success" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="success"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         ReactJS
       </Badge>
-      <Badge bg="danger" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="primary"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         React Native
       </Badge>
       <Badge
-        bg="warning"
-        text="dark"
-        className="d-flex align-items-center fs-6"
+        pill
+        bg="secondary"
+        text="white"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
       >
         CSS
       </Badge>
-      <Badge bg="info" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="success"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         Tailwind
       </Badge>
-      <Badge bg="primary" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="primary"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         Agile
       </Badge>
-      <Badge bg="info" text="dark" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="secondary"
+        text="white"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         GitHub
       </Badge>
-      <Badge bg="danger" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="success"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         React Native
       </Badge>
-      <Badge bg="dark" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="primary"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         Jira
       </Badge>
-      <Badge bg="success" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="secondary"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         Git
       </Badge>
-      <Badge bg="info" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="success"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         React Bootstrap
       </Badge>
-      <Badge bg="danger" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="primary"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         MongoDB
       </Badge>
-      <Badge bg="primary" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="secondary"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         Expo
       </Badge>
-      <Badge bg="dark" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="success"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         MongoDB
       </Badge>
-      <Badge bg="info" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="primary"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         ExpressJS
       </Badge>
-      <Badge bg="primary" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="secondary"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         NextJS
       </Badge>
-      <Badge bg="secondary" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="success"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         Vercel
       </Badge>
-      <Badge bg="danger" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="primary"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         Figma
       </Badge>
-      <Badge bg="success" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="secondary"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         Redux
       </Badge>
-      <Badge bg="danger" className="d-flex align-items-center fs-6">
+      <Badge
+        pill
+        bg="success"
+        className="d-flex items-center justify-center w-28 h-12 text-lg shadow-lg transform hover:scale-110 transition duration-300"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         TDD
       </Badge>
     </Stack>

@@ -1,61 +1,133 @@
-import Card from "react-bootstrap/Card";
-import Badge from "react-bootstrap/Badge";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import cv from "../assets/cv.png";
+import calendrier from "../assets/calendrier.jpg";
+import harmony from "../assets/harmony.jpg";
+import autoentrepreneur from "../assets/auto-entrepreneur.jpg";
+import ListGroup from "react-bootstrap/ListGroup";
 
 const Experience = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const projects = [
     {
-      title: "Projet personnel :",
-      subtitle: "CV en ligne  | 12/2024",
-      description: "Conception / Développement / Déploiement",
-      technologies: ["ReactJS", "PNPM", "React-Bootstrap", "Tailwind"],
-    },
-    {
-      subtitle: "Calendrier lunaire | 11/2024",
+      title: "Projet personnel : Création d'un CV en ligne",
+      date: "Décembre 2024",
       description: "Conception / Développement",
-      technologies: ["ReactJS", "Tailwind", "Jira", "GitHub"],
+      image: cv,
+      technologies: ["ReactJS", "PNPM", "React-Bootstrap", "Tailwind"],
+      link: "https://github.com/ton-repo-cv",
     },
     {
-      title: "Projet de fin d'études :",
-      subtitle:
-        "Application mobile de colocation intergénérationnelle | 04/2024",
+      title: "Projet personnel : Création d'un calendrier lunaire",
+      date: "Novembre 2024",
       description: "Conception / Développement / Déploiement",
+      image: calendrier,
+      technologies: ["ReactJS", "Tailwind", "Jira", "GitHub"],
+      link: "https://github.com/ton-repo-calendrier",
+    },
+    {
+      title:
+        "Projet de fin d'études : Application mobile de colocation intergénérationnelle",
+      date: "Avril 2024",
+      description: "Conception / Développement / Déploiement",
+      image: harmony,
       technologies: ["ReactJS", "Expo", "NodeJS", "ExpressJS", "MongoDB"],
+      link: "https://github.com/ton-repo-colocation",
     },
   ];
 
   const renderTechnologies = (technologies) => {
     return technologies.map((tech, index) => (
-      <Badge key={index} className="me-2" bg="danger">
+      <span
+        key={index}
+        className="text-sm bg-slate-200 text-slate-900 rounded px-3 py-1 mr-2 mb-2 shadow-md hover:bg-teal-600 transition duration-300"
+      >
         {tech}
-      </Badge>
+      </span>
     ));
   };
 
   return (
-    <Card className="border-0">
-      <Card.Header>EXPERIENCES PROFESSIONNELLES</Card.Header>
-      <Card.Body>
-        {projects.map((project, index) => (
-          <div key={index}>
-            <Card.Title>{project.title}</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted pl-6 mt-3">
-              - {project.subtitle}
-            </Card.Subtitle>
-            <Card.Text className="pl-9">
-              <p>{project.description}</p>
-              <p>Technologies : {renderTechnologies(project.technologies)}</p>
-            </Card.Text>
+    <section className="py-16 bg-gray-50">
+      <div className="container mx-auto px-6">
+        <h2
+          className="text-4xl font-bold text-center text-gray-800 mb-12"
+          data-aos="fade-up"
+        >
+          Expériences professionnelles
+        </h2>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300"
+              data-aos="fade-up"
+              data
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="h-48 w-full object-cover"
+              />
+              <div className="p-6">
+                <p className="text-sm text-gray-500">{project.date}</p>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  - {project.title}
+                </h3>
+
+                <p className="text-gray-700 mt-4">{project.description}</p>
+                <div className="mt-4 flex flex-wrap ">
+                  {renderTechnologies(project.technologies)}
+                </div>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    className="mt-4 inline-block text-teal-600 hover:text-teal-800 font-medium"
+                  >
+                    Voir le projet
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div
+          className="bg-white mt-3 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300"
+          data-aos="fade-up"
+          data
+        >
+          <div className="grid md:grid-cols-1 lg:grid-cols-1  ">
+            <div className="p-6">
+              <p className="text-sm text-gray-500">2114 - 2021</p>
+              <h3 className="text-xl font-semibold text-gray-800">
+                - Auto-entrepreneur
+              </h3>
+
+              <ListGroup>
+                <ListGroup.Item action variant="light">
+                  Création et gestion d’une entreprise de vente de pièces,
+                  consommables et accessoires de moto,
+                </ListGroup.Item>
+                <ListGroup.Item action variant="light">
+                  Création et gestion d’une entreprise de vente de produits
+                  alimentaires,
+                </ListGroup.Item>
+                <ListGroup.Item action variant="light">
+                  Création et gestion d’une entreprise de vente de mode en
+                  ligne.
+                </ListGroup.Item>
+              </ListGroup>
+            </div>
           </div>
-        ))}
-        <Card.Title>Auto-entrepreneuse</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted pl-6 mt-3">
-          <p>- Création et gestion d’une entreprise de vente de :</p>
-          <p className="mr-8 pr-6">Pièces et accessoires de moto | 2014-2021</p>
-          <p>Produits alimentaires, | 2014-2021 </p>
-          <p>et de mode en ligne | 2014-2021</p>
-        </Card.Subtitle>
-      </Card.Body>
-    </Card>
+        </div>
+      </div>
+    </section>
   );
 };
 

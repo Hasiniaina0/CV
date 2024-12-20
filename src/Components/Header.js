@@ -1,34 +1,55 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Avatar from "../assets/avatar.jpg";
-import Image from "react-bootstrap/Image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import headerImage from "../assets/header.jpg";
 
 const Header = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // Initialize AOS with options
+  }, []);
+
   return (
-    <header className="bg-stone-500 text-white py-6">
-      <Container>
-        <Row className="justify-content-md-center">
-          <Col className="flex ">
-            <Image
-              src={Avatar}
-              alt="Photo de profil"
-              style={{
-                width: "120px",
-                height: "120px",
-              }}
-              roundedCircle
-              className="border-4 border-white "
-            />
-          </Col>
-          <Col sm className="mt-4 sm:mt-0">
-            <Row>
-              <h1 className="text-xl font-bold">HARINIRINA Faramalala H.</h1>
-              <p className="text-lg ">Développeuse React</p>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
+    <header
+      className="relative h-screen text-white  flex items-center justify-end  "
+      style={{
+        backgroundImage: `url(${headerImage})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+      s
+    >
+      <div className="absolute inset-0 bg- bg-opacity-50"></div>
+      <div className="relative z-10 text-center">
+        <h1
+          className="text-4xl md:text-4xl lg:text-6xl font-bold mb-7 p-10 text-slate-400"
+          data-aos="zoom-in"
+        >
+          Bienvenue sur mon CV en ligne
+        </h1>
+        <p
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold  mb-14 text-slate-400 italic"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          Je suis Faramalala HARINIRINA,
+        </p>
+        <p
+          className="text-2xl md:text-7xl mb-32  text-slate-700 font-bold underline decoration-pink-500/30 "
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          Développeur fullstack JS{" "}
+        </p>
+        <a
+          href="#about"
+          className="bg-emerald-600 text-white px-6 py-3 rounded-full text-lg hover:bg-cyan-700 transition duration-300"
+          data-aos="zoom-in"
+        >
+          Découvrez mes projets
+        </a>
+      </div>
     </header>
   );
 };
