@@ -22,11 +22,15 @@ const Resume = () => {
           className="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
           data-aos="fade-up"
         >
-          <div className="flex">
-            {/* Conteneur de l'image avec marges et taille */}
-            <div className="mr-6 flex-shrink-0">
-              <img src={myImage} alt="Avatar" className="w-42 h-80 mt-2  " />
-              <div className="mt-2">
+          <div className="flex flex-col md:flex-row items-center md:items-start">
+            {/* Conteneur de l'image avec marges et taille ajustées */}
+            <div className="mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+              <img
+                src={myImage}
+                alt="Avatar"
+                className="w-48 h-48 md:w-60 md:h-80 rounded object-cover"
+              />
+              <div className="mt-4 text-center md:text-left">
                 <strong>Atouts :</strong> autonome, capacité d'apprendre vite,
                 <br /> curieuse et aime le travail en équipe.
               </div>
@@ -47,7 +51,7 @@ const Resume = () => {
                 Développeur web et mobile, curieuse et passionnée par
                 l’apprentissage des nouvelles technologies. Récemment formée en
                 conception et développement d’applications modernes, je maîtrise
-                ReactJS, React Native, Node.js, Express.js et MongoDB.{" "}
+                ReactJS, React Native, Node.js, Express.js et MongoDB.
               </p>
               <p className="text-gray-700 text-lg mt-4 leading-relaxed tracking-wide">
                 Je suis à la recherche d’une opportunité pour mettre en pratique

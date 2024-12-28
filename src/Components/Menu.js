@@ -14,23 +14,64 @@ function Menu() {
     <Navbar
       collapseOnSelect
       expand="lg"
-      className="bg-body-tertiary"
       bg="dark"
+      variant="dark"
+      className="shadow-lg"
       data-bs-theme="dark"
     >
       <Container>
-        <Navbar.Brand href="#home" data-aos="fade-down">
+        <Navbar.Brand
+          href="#home"
+          data-aos="fade-down"
+          className="text-light hover:underline"
+        >
           ACCUEIL
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
-            <Nav.Link href="#resume">PROFIL</Nav.Link>
-            <Nav.Link href="#experiences">EXPERIENCES</Nav.Link>
-            <Nav.Link href="#competences">COMPETENCES</Nav.Link>
-            <Nav.Link href="#formation">FORMATION</Nav.Link>
-            <Nav.Link href="#realisation">REALISATIONS</Nav.Link>
-            <Nav.Link href="#contact">CONTACT</Nav.Link>
+            <Nav.Link
+              href="#resume"
+              className="text-light mx-3 hover:underline"
+              data-aos="fade-up"
+            >
+              PROFIL
+            </Nav.Link>
+            <Nav.Link
+              href="#experiences"
+              className="text-light mx-3 hover:underline"
+              data-aos="fade-up"
+            >
+              EXPERIENCES
+            </Nav.Link>
+            <Nav.Link
+              href="#competences"
+              className="text-light mx-3 hover:underline"
+              data-aos="fade-up"
+            >
+              COMPETENCES
+            </Nav.Link>
+            <Nav.Link
+              href="#formation"
+              className="text-light mx-3 hover:underline"
+              data-aos="fade-up"
+            >
+              FORMATION
+            </Nav.Link>
+            <Nav.Link
+              href="#realisation"
+              className="text-light mx-3 hover:underline"
+              data-aos="fade-up"
+            >
+              REALISATIONS
+            </Nav.Link>
+            <Nav.Link
+              href="#contact"
+              className="text-light mx-3 hover:underline"
+              data-aos="fade-up"
+            >
+              CONTACT
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

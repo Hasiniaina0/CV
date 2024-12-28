@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Competences from "./Components/Competences";
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 
 function App() {
   useEffect(() => {
@@ -26,7 +27,8 @@ function App() {
       <Experience id="experiences" />
       <Competences id="competences" />
       <Formation id="formation" />
-      <Footer />
+      <Contact id="contact" />
+      <Footer id="contact" />
     </div>
   );
 }

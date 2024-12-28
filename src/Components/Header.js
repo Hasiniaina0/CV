@@ -1,7 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import headerImage from "../assets/header.jpg";
+import headerImage from "../assets/lohany.jpg";
 
 const Header = () => {
   useEffect(() => {
@@ -18,16 +18,16 @@ const Header = () => {
       }}
       s
     >
-      <div className="absolute inset-0 bg- bg-opacity-50"></div>
-      <div className="relative z-10 text-center">
+      <div className="absolute bg-opacity-50"></div>
+      <div className=" relative text-center pt-96">
         <h1
-          className="text-4xl md:text-4xl lg:text-6xl font-bold mb-7 p-10 text-slate-400"
+          className="text-4xl md:text-4xl lg:text-6xl font-bold mb-7  text-slate-400"
           data-aos="zoom-in"
         >
           Bienvenue sur mon CV en ligne
         </h1>
         <p
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold  mb-14 text-slate-400 "
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold  mb-7 text-slate-400 "
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
@@ -35,7 +35,7 @@ const Header = () => {
           Je suis Faramalala HARINIRINA,
         </p>
         <p
-          className="text-2xl md:text-7xl mb-32  text-slate-700 font-bold underline decoration-pink-500/30 "
+          className="text-2xl md:text-6xl mb-16 text-slate-700 font-bold underline decoration-pink-500/30 "
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
@@ -44,7 +44,7 @@ const Header = () => {
         </p>
         <a
           href="#about"
-          className="bg-emerald-600 text-white px-6 py-3 rounded-full text-lg hover:bg-cyan-700 transition duration-300"
+          className="bg-emerald-600  text-white px-6 py-3 rounded-full text-lg hover:bg-cyan-700 transition duration-300"
           data-aos="zoom-in"
         >
           Découvrez mes projets

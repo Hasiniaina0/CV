@@ -67,7 +67,7 @@ const Formation = () => {
             )}
             <p className="mt-2 text-gray-700">
               <span className="font-medium">{formation.location}</span> |{" "}
-              <span className="text-blue-500 font-medium">
+              <span className="text-yellow-700 font-medium">
                 {formation.date}
               </span>
             </p>

@@ -3,8 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import cv from "../assets/cv.png";
 import calendrier from "../assets/calendrier.jpg";
-import harmony from "../assets/harmony.jpg";
 import ListGroup from "react-bootstrap/ListGroup";
+import coloc from "../assets/coloc.png";
 
 const Experience = () => {
   useEffect(() => {
@@ -17,8 +17,8 @@ const Experience = () => {
       date: "Décembre 2024",
       description: "Conception / Développement",
       image: cv,
-      technologies: ["ReactJS", "PNPM", "React-Bootstrap", "Tailwind"],
-      link: "https://github.com/ton-repo-cv",
+      technologies: ["ReactJS", "PNPM", "React-Bootstrap", "Tailwind", "AOS"],
+      link: "https://github.com/Hasiniaina0/CV-reactJS",
     },
     {
       title: "Projet personnel : Création d'un calendrier lunaire",
@@ -26,16 +26,16 @@ const Experience = () => {
       description: "Conception / Développement / Déploiement",
       image: calendrier,
       technologies: ["ReactJS", "Tailwind", "Jira", "GitHub"],
-      link: "https://github.com/ton-repo-calendrier",
+      link: "https://github.com/Hasiniaina0/calendrier-lunaire",
     },
     {
       title:
         "Projet de fin d'études : Application mobile de colocation intergénérationnelle",
       date: "Avril 2024",
       description: "Conception / Développement / Déploiement",
-      image: harmony,
+      image: coloc,
       technologies: ["ReactJS", "Expo", "NodeJS", "ExpressJS", "MongoDB"],
-      link: "https://github.com/ton-repo-colocation",
+      link: "https://github.com/Hasiniaina0/HARMONY-HOME-Frontend",
     },
   ];
 

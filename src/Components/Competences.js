@@ -18,17 +18,23 @@ const Competences = () => {
       "ReactJS",
       "NextJS",
       "React Native",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Tailwind",
+      "React Bootstrap",
     ],
 
     Outils: ["Git", "GitHub", "Jira", "Figma", "Redux", "TDD"],
-    BackEnd: ["NodeJS", "ExpressJS", "MongoDB"],
-    UI: ["Tailwind", "React Bootstrap"],
   };
 
   return (
-    <div id="competences" className="container my-12 px-6">
+    <div
+      id="competences"
+      className="container px-6 py-12 max-w-screen-lg mx-auto"
+    >
       <h2
-        className="text-4xl font-bold text-center text-gray-800 mb-12"
+        className="text-4xl font-semibold text-center text-gray-900 mb-12"
         data-aos="fade-up"
       >
         Compétences
@@ -40,14 +46,14 @@ const Competences = () => {
           data-aos="fade-up"
           data-aos-delay={`${index * 100}`}
         >
-          <h3 className="text-2xl font-semibold  text-gray-800 mb-8">
+          <h3 className="text-2xl text-center  font-medium text-teal-600 mb-6">
             {category}
           </h3>
-          <div className="flex flex-wrap  gap-4">
+          <div className="flex flex-wrap gap-4 justify-center">
             {categories[category].map((badge, idx) => (
               <span
                 key={idx}
-                className="bg-gray-(0text-white py-2 px-4 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300"
+                className="bg-gray-200 text-gray-800 py-2 px-5 rounded-full text-lg font-medium shadow-md transform hover:scale-105 transition duration-300 ease-in-out"
               >
                 {badge}
               </span>

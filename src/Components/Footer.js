@@ -5,10 +5,10 @@ import { MdContactPhone } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-4 text-center">
+    <footer id="contact" className="bg-dark text-white py-4 text-center">
       <div className="container">
         <p className="mb-2">
-          © 2024 By Faramalala HARINIRINA - Tous droits réservés.
+          © 2024 Faramalala HARINIRINA - Tous droits réservés.
         </p>
         <ul className="list-inline">
           <li className="list-inline-item mx-3">
