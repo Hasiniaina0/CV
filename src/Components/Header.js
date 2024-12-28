@@ -27,7 +27,7 @@ const Header = () => {
           Bienvenue sur mon CV en ligne
         </h1>
         <p
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold  mb-14 text-slate-400 italic"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold  mb-14 text-slate-400 "
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"

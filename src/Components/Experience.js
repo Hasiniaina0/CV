@@ -4,7 +4,6 @@ import "aos/dist/aos.css";
 import cv from "../assets/cv.png";
 import calendrier from "../assets/calendrier.jpg";
 import harmony from "../assets/harmony.jpg";
-import autoentrepreneur from "../assets/auto-entrepreneur.jpg";
 import ListGroup from "react-bootstrap/ListGroup";
 
 const Experience = () => {
@@ -52,7 +51,7 @@ const Experience = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="experiences" className="py-16 bg-gray-50">
       <div className="container mx-auto px-6">
         <h2
           className="text-4xl font-bold text-center text-gray-800 mb-12"
@@ -87,7 +86,6 @@ const Experience = () => {
                 {project.link && (
                   <a
                     href={project.link}
-                    target="_blank"
                     className="mt-4 inline-block text-teal-600 hover:text-teal-800 font-medium"
                   >
                     Voir le projet

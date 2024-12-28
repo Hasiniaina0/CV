@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 
 function Menu() {
   useEffect(() => {
-    AOS.init({ duration: 500, once: true });
+    AOS.init({ duration: 1500, once: true });
   }, []);
 
   return (
@@ -24,24 +24,13 @@ function Menu() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#competences" data-aos="fade-right">
-              COMPETENCES
-            </Nav.Link>
-            <Nav.Link href="#experiences" data-aos="fade-right">
-              EXPERIENCES
-            </Nav.Link>
-            <Nav.Link href="#formation" data-aos="fade-right">
-              FORMATION
-            </Nav.Link>
-          </Nav>
           <Nav>
-            <Nav.Link href="#realisation" data-aos="fade-left">
-              REALISATIONS
-            </Nav.Link>
-            <Nav.Link href="#contact" data-aos="fade-left" data-aos-delay="100">
-              CONTACT
-            </Nav.Link>
+            <Nav.Link href="#resume">PROFIL</Nav.Link>
+            <Nav.Link href="#experiences">EXPERIENCES</Nav.Link>
+            <Nav.Link href="#competences">COMPETENCES</Nav.Link>
+            <Nav.Link href="#formation">FORMATION</Nav.Link>
+            <Nav.Link href="#realisation">REALISATIONS</Nav.Link>
+            <Nav.Link href="#contact">CONTACT</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

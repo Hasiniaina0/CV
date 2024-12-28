@@ -16,7 +16,7 @@ const Formation = () => {
       title: "Titre RNCP Niveau 6",
       subtitle: "Concepteur Développeur Web et Mobile Fullstack",
       location: "La Capsule, Paris",
-      date: "Avril 2024",
+      date: "2024",
     },
     {
       title: "Master 1 en Génie Logiciel",
@@ -36,7 +36,10 @@ const Formation = () => {
   ];
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen flex flex-col items-center">
+    <div
+      id="formation"
+      className="p-6 bg-gray-100 min-h-screen flex flex-col items-center"
+    >
       <h2
         className="text-4xl font-bold text-center text-gray-800 mb-12"
         data-aos="fade-up"
@@ -58,7 +61,7 @@ const Formation = () => {
               </h3>
             </div>
             {formation.subtitle && (
-              <p className="text-sm text-gray-500 italic">
+              <p className="text-lg text-gray-500 italic">
                 {formation.subtitle}
               </p>
             )}
