@@ -1,6 +1,26 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa";
+import {
+  SiMongodb,
+  SiExpress,
+  SiNextdotjs,
+  SiRedux,
+  SiTailwindcss,
+  SiFigma,
+  SiJira,
+  SiReactbootstrap,
+} from "react-icons/si";
+import { TbUserCode } from "react-icons/tb";
 
 const Competences = () => {
   useEffect(() => {
@@ -12,20 +32,32 @@ const Competences = () => {
 
   const categories = {
     Technologies: [
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "ReactJS",
-      "NextJS",
-      "React Native",
-      "NodeJS",
-      "ExpressJS",
-      "MongoDB",
-      "Tailwind",
-      "React Bootstrap",
+      { name: "JavaScript", icon: <FaJs className="text-yellow-500" /> },
+      { name: "HTML", icon: <FaHtml5 className="text-orange-600" /> },
+      { name: "CSS", icon: <FaCss3Alt className="text-blue-600" /> },
+      { name: "ReactJS", icon: <FaReact className="text-blue-500" /> },
+      { name: "NextJS", icon: <SiNextdotjs className="text-gray-800" /> },
+      { name: "React Native", icon: <FaReact className="text-blue-500" /> },
+      { name: "NodeJS", icon: <FaNodeJs className="text-green-600" /> },
+      { name: "ExpressJS", icon: <SiExpress className="text-gray-700" /> },
+      { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+      { name: "Tailwind", icon: <SiTailwindcss className="text-teal-400" /> },
+      { name: "Redux", icon: <SiRedux className="text-purple-600" /> },
+      { name: "Jest", icon: <TbUserCode className="text-purple-600" /> },
+      {
+        name: "React Bootstrap",
+        icon: <SiReactbootstrap className="text-blue-500" />,
+      },
     ],
 
-    Outils: ["Git", "GitHub", "Jira", "Figma", "Redux", "TDD"],
+    Outils: [
+      { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
+      { name: "GitHub", icon: <FaGithub className="text-gray-800" /> },
+      { name: "Jira", icon: <SiJira className="text-blue-700" /> },
+      { name: "Figma", icon: <SiFigma className="text-purple-500" /> },
+
+      { name: "TDD", icon: <TbUserCode className="text-green-500" /> },
+    ],
   };
 
   return (
@@ -50,12 +82,12 @@ const Competences = () => {
             {category}
           </h3>
           <div className="flex flex-wrap gap-4 justify-center">
-            {categories[category].map((badge, idx) => (
+            {categories[category].map((item, idx) => (
               <span
                 key={idx}
-                className="bg-gray-200 text-gray-800 py-2 px-5 rounded-full text-lg font-medium shadow-md transform hover:scale-105 transition duration-300 ease-in-out"
+                className="flex items-center gap-2 bg-gray-200 text-gray-800 py-2 px-5 rounded-full text-lg font-medium shadow-md transform hover:scale-105 transition duration-300 ease-in-out"
               >
-                {badge}
+                {item.icon} {item.name}
               </span>
             ))}
           </div>

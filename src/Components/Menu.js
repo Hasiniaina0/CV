@@ -17,14 +17,15 @@ function Menu() {
       bg="dark"
       variant="dark"
       className="shadow-lg"
+      style={{
+        position: "sticky",
+        top: 0,
+        zIndex: 1050,
+      }}
       data-bs-theme="dark"
     >
       <Container>
-        <Navbar.Brand
-          href="#home"
-          data-aos="fade-down"
-          className="text-light hover:underline"
-        >
+        <Navbar.Brand href="#home" className="text-light hover:underline">
           ACCUEIL
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -33,42 +34,36 @@ function Menu() {
             <Nav.Link
               href="#resume"
               className="text-light mx-3 hover:underline"
-              data-aos="fade-up"
             >
               PROFIL
             </Nav.Link>
             <Nav.Link
               href="#experiences"
               className="text-light mx-3 hover:underline"
-              data-aos="fade-up"
             >
               EXPERIENCES
             </Nav.Link>
             <Nav.Link
               href="#competences"
               className="text-light mx-3 hover:underline"
-              data-aos="fade-up"
             >
               COMPETENCES
             </Nav.Link>
             <Nav.Link
               href="#formation"
               className="text-light mx-3 hover:underline"
-              data-aos="fade-up"
             >
               FORMATION
             </Nav.Link>
             <Nav.Link
               href="#realisation"
               className="text-light mx-3 hover:underline"
-              data-aos="fade-up"
             >
               REALISATIONS
             </Nav.Link>
             <Nav.Link
               href="#contact"
               className="text-light mx-3 hover:underline"
-              data-aos="fade-up"
             >
               CONTACT
             </Nav.Link>

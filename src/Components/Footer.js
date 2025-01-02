@@ -1,7 +1,6 @@
 import React from "react";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdContactPhone } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -29,11 +28,6 @@ const Footer = () => {
               className="text-white"
             >
               <FaGithub className="text-3xl" />
-            </a>
-          </li>
-          <li className="list-inline-item mx-3">
-            <a href="#contact" className="text-white">
-              <MdContactPhone className="text-3xl" />
             </a>
           </li>
         </ul>

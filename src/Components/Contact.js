@@ -41,10 +41,10 @@ const Contact = () => {
         Mes Contacts
       </h2>
       <p className="text-xl mb-3 text-center" data-aos="fade-up">
-        A la recherche d'un emploi pour les postes de :
+        Actuellement à la recherche d'un emploi pour les postes de :
       </p>
       <p className="text-xl mb-14 text-center" data-aos="fade-up">
-        Développeur fullstack | Développeur frontend
+        Développeur fullstack | Développeur frontend | Développeur backend
       </p>
 
       <div className="flex flex-wrap gap-8 justify-center">

@@ -43,7 +43,7 @@ const Header = () => {
           Développeur fullstack JS{" "}
         </p>
         <a
-          href="#about"
+          href="#experiences"
           className="bg-emerald-600  text-white px-6 py-3 rounded-full text-lg hover:bg-cyan-700 transition duration-300"
           data-aos="zoom-in"
         >

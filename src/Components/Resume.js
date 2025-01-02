@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import myImage from "../assets/avatar2.jpg";
+import Button from "react-bootstrap/Button";
+import cv from "../assets/CV-FARAMALALA.pdf";
 
 const Resume = () => {
   useEffect(() => {
@@ -64,6 +66,23 @@ const Resume = () => {
                 à la réussite des projets d’équipe.
               </p>
             </div>
+          </div>
+          <div className="flex justify-center items-center space-x-4 mt-6 ">
+            <Button
+              className=" text-black  py-2 px-4 rounded-full border-2"
+              href={cv}
+              download
+              variant="outline-warning"
+            >
+              Télécharger CV
+            </Button>
+            <Button
+              className=" text-black  py-2 px-4 rounded-full border-2"
+              href="#contact"
+              variant="outline-warning"
+            >
+              Me contacter
+            </Button>
           </div>
         </div>
       </div>

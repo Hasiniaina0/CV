@@ -35,7 +35,16 @@ const Experience = () => {
       description: "Conception / Développement / Déploiement",
       image: coloc,
       technologies: ["ReactJS", "Expo", "NodeJS", "ExpressJS", "MongoDB"],
-      link: "https://github.com/Hasiniaina0/HARMONY-HOME-Frontend",
+      link: [
+        {
+          name: "Frontend",
+          url: "https://github.com/Hasiniaina0/HARMONY-HOME-Frontend",
+        },
+        {
+          name: "Backend",
+          url: "https://github.com/Hasiniaina0/HARMONY-HOMY-Backend",
+        },
+      ],
     },
   ];
 
@@ -108,15 +117,15 @@ const Experience = () => {
               </h3>
 
               <ListGroup>
-                <ListGroup.Item action variant="light">
+                <ListGroup.Item variant="light">
                   Création et gestion d’une entreprise de vente de pièces,
                   consommables et accessoires de moto,
                 </ListGroup.Item>
-                <ListGroup.Item action variant="light">
+                <ListGroup.Item variant="light">
                   Création et gestion d’une entreprise de vente de produits
                   alimentaires,
                 </ListGroup.Item>
-                <ListGroup.Item action variant="light">
+                <ListGroup.Item variant="light">
                   Création et gestion d’une entreprise de vente de mode en
                   ligne.
                 </ListGroup.Item>
