@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import cv from "../assets/cv.png";
 import calendrier from "../assets/calendrier.jpg";
 import ListGroup from "react-bootstrap/ListGroup";
-import coloc from "../assets/coloc.png";
+import coloc from "../assets/colocation.jpg";
 
 const Experience = () => {
   useEffect(() => {

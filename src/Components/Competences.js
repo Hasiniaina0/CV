@@ -21,6 +21,7 @@ import {
   SiReactbootstrap,
 } from "react-icons/si";
 import { TbUserCode } from "react-icons/tb";
+import { SiExpo } from "react-icons/si";
 
 const Competences = () => {
   useEffect(() => {
@@ -32,12 +33,13 @@ const Competences = () => {
 
   const categories = {
     Technologies: [
-      { name: "JavaScript", icon: <FaJs className="text-yellow-500" /> },
       { name: "HTML", icon: <FaHtml5 className="text-orange-600" /> },
       { name: "CSS", icon: <FaCss3Alt className="text-blue-600" /> },
+      { name: "JavaScript", icon: <FaJs className="text-yellow-500" /> },
       { name: "ReactJS", icon: <FaReact className="text-blue-500" /> },
       { name: "NextJS", icon: <SiNextdotjs className="text-gray-800" /> },
       { name: "React Native", icon: <FaReact className="text-blue-500" /> },
+      { name: "Expo", icon: <SiExpo className="text-blue-500" /> },
       { name: "NodeJS", icon: <FaNodeJs className="text-green-600" /> },
       { name: "ExpressJS", icon: <SiExpress className="text-gray-700" /> },
       { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
