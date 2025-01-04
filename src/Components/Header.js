@@ -22,7 +22,8 @@ const Header = () => {
       <div className=" relative text-center pt-96">
         <h1
           className="text-4xl md:text-4xl lg:text-6xl font-bold mb-7  text-slate-400"
-          data-aos="zoom-in"
+          data-aos="fade-down"
+          data-aos-easing="linear"
         >
           Bienvenue sur mon CV en ligne
         </h1>

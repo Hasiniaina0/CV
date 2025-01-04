@@ -33,39 +33,41 @@ const Contact = () => {
   ];
 
   return (
-    <div id="contact" className="p-8 bg-gray-50 ">
-      <h2
-        className="text-3xl font-extrabold text-gray-800 mb-8 text-center"
-        data-aos="fade-up"
-      >
-        Mes Contacts
-      </h2>
-      <p className="text-xl mb-3 text-center" data-aos="fade-up">
-        Actuellement à la recherche d'un emploi pour les postes de :
-      </p>
-      <p className="text-xl mb-14 text-center" data-aos="fade-up">
-        Développeur fullstack | Développeur frontend | Développeur backend
-      </p>
+    <section id="contact" className="py-16 bg-gray-50">
+      <div className="container mx-auto px-6">
+        <h2
+          className="text-3xl font-extrabold text-gray-800 mb-8 text-center"
+          data-aos="fade-up"
+        >
+          Mes contacts
+        </h2>
+        <p className="text-xl mb-3 text-center" data-aos="fade-up">
+          Actuellement à la recherche d'un emploi pour les postes de :
+        </p>
+        <p className="text-xl mb-14 text-center" data-aos="fade-up">
+          Développeur fullstack | Développeur frontend | Développeur backend
+        </p>
 
-      <div className="flex flex-wrap gap-8 justify-center">
-        {contacts.map((contact, index) => (
-          <div
-            key={index}
-            className={`${contact.bgColor} flex justify-center items-center gap-4 mb-6 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow w-full max-w-sm md:max-w-xs`}
-            data-aos="fade-up"
-            data-aos-delay={index * 100}
-          >
-            <div className="text-2xl">{contact.icon}</div>
-            <div>
-              <h3 className="text-lg font-semibold text-white">
-                {contact.title}
-              </h3>
-              <p className="text-white">{contact.subtitle}</p>
+        <div className="flex flex-wrap gap-8 justify-center">
+          {contacts.map((contact, index) => (
+            <div
+              key={index}
+              className={`${contact.bgColor} flex justify-center items-center gap-4 mb-6 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow w-full max-w-sm md:max-w-xs`}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <div className="text-2xl">{contact.icon}</div>
+              <div>
+                <h3 className="text-lg font-semibold text-white">
+                  {contact.title}
+                </h3>
+                <p className="text-white">{contact.subtitle}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

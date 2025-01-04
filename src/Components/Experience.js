@@ -4,7 +4,8 @@ import "aos/dist/aos.css";
 import cv from "../assets/cv.png";
 import calendrier from "../assets/calendrier.jpg";
 import ListGroup from "react-bootstrap/ListGroup";
-import coloc from "../assets/colocation.jpg";
+import coloc from "../assets/harmony.jpg";
+import harmony from "../assets/harmony.jpg";
 
 const Experience = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const Experience = () => {
       image: cv,
       technologies: ["ReactJS", "PNPM", "React-Bootstrap", "Tailwind", "AOS"],
       link: "https://github.com/Hasiniaina0/CV-reactJS",
+      source: harmony,
     },
     {
       title: "Projet personnel : Création d'un calendrier lunaire",
@@ -27,6 +29,7 @@ const Experience = () => {
       image: calendrier,
       technologies: ["ReactJS", "Tailwind", "Jira", "GitHub"],
       link: "https://github.com/Hasiniaina0/calendrier-lunaire",
+      source: harmony,
     },
     {
       title:
@@ -45,6 +48,7 @@ const Experience = () => {
           url: "https://github.com/Hasiniaina0/HARMONY-HOMY-Backend",
         },
       ],
+      source: harmony,
     },
   ];
 
@@ -52,7 +56,7 @@ const Experience = () => {
     return technologies.map((tech, index) => (
       <span
         key={index}
-        className="text-sm bg-slate-200 text-slate-900 rounded px-3 py-1 mr-2 mb-2 shadow-md hover:bg-teal-600 transition duration-300"
+        className="text-sm bg-slate-50 text-slate-900 rounded px-3 py-1 mr-2 mb-2 shadow-md hover:bg-slate-200 transition duration-300"
       >
         {tech}
       </span>
@@ -92,14 +96,34 @@ const Experience = () => {
                 <div className="mt-4 flex flex-wrap ">
                   {renderTechnologies(project.technologies)}
                 </div>
-                {project.link && (
+                <div className="mt-4">
+                  {project.link && Array.isArray(project.link) ? (
+                    project.link.map((link, idx) => (
+                      <a
+                        key={idx}
+                        href={link.url}
+                        className="mt-4 inline-block text-teal-600 hover:text-teal-800 font-medium"
+                      >
+                        {link.name}
+                      </a>
+                    ))
+                  ) : (
+                    <a
+                      href={project.link}
+                      className="mt-4 inline-block text-teal-600 hover:text-teal-800 font-medium"
+                    >
+                      Git du projet
+                    </a>
+                  )}{" "}
                   <a
-                    href={project.link}
-                    className="mt-4 inline-block text-teal-600 hover:text-teal-800 font-medium"
+                    href={project.source}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-4 inline-block text-end text-teal-600 hover:text-teal-800 font-medium"
                   >
-                    Voir le projet
+                    | Voir le projet
                   </a>
-                )}
+                </div>
               </div>
             </div>
           ))}
@@ -107,9 +131,8 @@ const Experience = () => {
         <div
           className="bg-white mt-3 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300"
           data-aos="fade-up"
-          data
         >
-          <div className="grid md:grid-cols-1 lg:grid-cols-1  ">
+          <div className="grid md:grid-cols-1 lg:grid-cols-1">
             <div className="p-6">
               <p className="text-sm text-gray-500">2114 - 2021</p>
               <h3 className="text-xl font-semibold text-gray-800">
