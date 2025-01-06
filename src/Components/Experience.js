@@ -5,7 +5,6 @@ import cv from "../assets/cv.png";
 import calendrier from "../assets/calendrier.jpg";
 import ListGroup from "react-bootstrap/ListGroup";
 import coloc from "../assets/harmony.jpg";
-import cvImg from "../assets/cv-img.png";
 
 import { FaGithub, FaEye } from "react-icons/fa";
 
@@ -22,7 +21,7 @@ const Experience = () => {
       image: cv,
       technologies: ["ReactJS", "PNPM", "React-Bootstrap", "Tailwind", "AOS"],
       link: "https://github.com/Hasiniaina0/CV-reactJS",
-      source: cvImg,
+      source: " https://hasiniaina0.github.io/CV/",
     },
     {
       title: "Projet personnel : Création d'un calendrier lunaire",
