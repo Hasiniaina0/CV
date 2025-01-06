@@ -65,7 +65,7 @@ const Competences = () => {
   return (
     <div
       id="competences"
-      className="container px-6 py-12 max-w-screen-lg mx-auto"
+      className="container px-6 py-16 max-w-screen-lg mx-auto"
     >
       <h2
         className="text-4xl font-semibold text-center text-gray-900 mb-12"
