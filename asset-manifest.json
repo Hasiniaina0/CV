@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Hasiniaina0/CV/static/css/main.6e9de008.css",
+    "main.js": "/Hasiniaina0/CV/static/js/main.4d3ff4ce.js",
+    "static/js/660.26b5edcf.chunk.js": "/Hasiniaina0/CV/static/js/660.26b5edcf.chunk.js",
+    "static/media/cv-img.png": "/Hasiniaina0/CV/static/media/cv-img.7dc423ef22d6f87b60a0.png",
+    "static/media/cv.png": "/Hasiniaina0/CV/static/media/cv.9b6efcc5c5cb58e93b6d.png",
+    "static/media/coloc-img.png": "/Hasiniaina0/CV/static/media/coloc-img.a7975d327ee7993d36b5.png",
+    "static/media/CV-FARAMALALA.pdf": "/Hasiniaina0/CV/static/media/CV-FARAMALALA.906cf8ebf6533ced6079.pdf",
+    "static/media/calendrier-img.png": "/Hasiniaina0/CV/static/media/calendrier-img.09c332bf5db36002c64c.png",
+    "static/media/lohany.jpg": "/Hasiniaina0/CV/static/media/lohany.b65b7a29c080d73f6895.jpg",
+    "static/media/harmony.jpg": "/Hasiniaina0/CV/static/media/harmony.141a897548a7988689b1.jpg",
+    "index.html": "/Hasiniaina0/CV/index.html",
+    "main.6e9de008.css.map": "/Hasiniaina0/CV/static/css/main.6e9de008.css.map",
+    "main.4d3ff4ce.js.map": "/Hasiniaina0/CV/static/js/main.4d3ff4ce.js.map",
+    "660.26b5edcf.chunk.js.map": "/Hasiniaina0/CV/static/js/660.26b5edcf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e9de008.css",
+    "static/js/main.4d3ff4ce.js"
+  ]
+}
