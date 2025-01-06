@@ -6,8 +6,7 @@ import calendrier from "../assets/calendrier.jpg";
 import ListGroup from "react-bootstrap/ListGroup";
 import coloc from "../assets/harmony.jpg";
 import cvImg from "../assets/cv-img.png";
-import calendrierImg from "../assets/calendrier-img.png";
-import colocImg from "../assets/coloc-img.png";
+
 import { FaGithub, FaEye } from "react-icons/fa";
 
 const Experience = () => {
@@ -32,7 +31,7 @@ const Experience = () => {
       image: calendrier,
       technologies: ["ReactJS", "Tailwind", "Jira", "GitHub"],
       link: "https://github.com/Hasiniaina0/calendrier-lunaire",
-      source: calendrierImg,
+      source: "https://hasiniaina0.github.io/calendrier-lunaire/",
     },
     {
       title:
@@ -51,7 +50,6 @@ const Experience = () => {
           url: "https://github.com/Hasiniaina0/HARMONY-HOMY-Backend",
         },
       ],
-      source: colocImg,
     },
   ];
 
@@ -95,7 +93,7 @@ const Experience = () => {
                 <div className="flex flex-wrap mb-4">
                   {renderTechnologies(project.technologies)}
                 </div>
-                <div className="flex justify-between items-center gap-4">
+                <div className="flex justify-start items-center gap-4">
                   {Array.isArray(project.link) ? (
                     project.link.map((link, idx) => (
                       <a
@@ -106,7 +104,7 @@ const Experience = () => {
                         className="flex items-center gap-2 text-teal-600 hover:text-teal-800 font-medium"
                         aria-label={`GitHub - ${link.name}`}
                       >
-                        <FaGithub className="text-xl text-orange-950" />
+                        <FaGithub className="text-xl text-teal-600" />
                         {link.name}
                       </a>
                     ))
@@ -118,20 +116,23 @@ const Experience = () => {
                       className="flex items-center gap-2 text-teal-600 hover:text-teal-800 font-medium"
                       aria-label="Lien GitHub"
                     >
-                      <FaGithub className="text-xl text-orange-950" />
+                      <FaGithub className="text-xl text-teal-600" />
                       Lien GitHub
                     </a>
                   )}
-                  <a
-                    href={project.source}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-teal-600 hover:text-teal-800 font-medium"
-                    aria-label="Voir le projet"
-                  >
-                    <FaEye className="text-xl text-orange-950" />
-                    Voir le projet
-                  </a>
+                  {project.title !==
+                    "Projet de fin d'études : Application mobile de colocation intergénérationnelle" && (
+                    <a
+                      href={project.source}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-teal-600 hover:text-teal-800 font-medium"
+                      aria-label="Voir le projet"
+                    >
+                      <FaEye className="text-xl text-teal-600" />
+                      Voir le projet
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

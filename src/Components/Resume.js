@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import myImage from "../assets/avatar2.jpg";
+import myImage from "../assets/avatar1.jpg";
 import Button from "react-bootstrap/Button";
 import cv from "../assets/CV-FARAMALALA.pdf";
 
@@ -25,14 +25,13 @@ const Resume = () => {
           data-aos="fade-up"
         >
           <div className="flex flex-col md:flex-row items-center md:items-start">
-            {/* Conteneur de l'image avec marges et taille ajustées */}
             <div className="mb-4 md:mb-0 md:mr-6 flex-shrink-0">
               <img
                 src={myImage}
                 alt="Avatar"
                 className="w-48 h-48 md:w-60 md:h-80 rounded object-cover"
               />
-              <div className="mt-4 text-center md:text-left">
+              <div className="mt-4  md:text-left">
                 <strong>Atouts :</strong> autonome, capacité d'apprendre vite,
                 <br /> curieuse et aime le travail en équipe.
               </div>

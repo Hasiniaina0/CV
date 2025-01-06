@@ -52,7 +52,7 @@ const Competences = () => {
       },
     ],
 
-    Outils: [
+    "Outils et Méthodes": [
       { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
       { name: "GitHub", icon: <FaGithub className="text-gray-800" /> },
       { name: "Jira", icon: <SiJira className="text-blue-700" /> },

@@ -25,7 +25,7 @@ function Menu() {
       data-bs-theme="dark"
     >
       <Container>
-        <Navbar.Brand href="#home" className="text-light hover:underline">
+        <Navbar.Brand href="#header" className="text-light hover:underline">
           ACCUEIL
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
