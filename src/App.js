@@ -8,7 +8,7 @@ import Menu from "./Components/Menu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Competences from "./Components/Competences";
+import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 
@@ -25,7 +25,7 @@ function App() {
       <Header />
       <Resume id="resume" />
       <Experience id="experiences" />
-      <Competences id="competences" />
+      <Skills id="competences" />
       <Formation id="formation" />
       <Contact id="contact" />
       <Footer id="contact" />

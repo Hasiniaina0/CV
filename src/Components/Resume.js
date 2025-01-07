@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import myImage from "../assets/avatar1.jpg";
+import myImage from "../assets/my-photo.jpg";
 import Button from "react-bootstrap/Button";
 import cv from "../assets/CV-FARAMALALA.pdf";
 

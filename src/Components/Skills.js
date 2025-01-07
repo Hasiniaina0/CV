@@ -23,7 +23,7 @@ import {
 import { TbUserCode } from "react-icons/tb";
 import { SiExpo } from "react-icons/si";
 
-const Competences = () => {
+const Skills = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -63,10 +63,7 @@ const Competences = () => {
   };
 
   return (
-    <div
-      id="competences"
-      className="container px-6 py-16 max-w-screen-lg mx-auto"
-    >
+    <div id="Skills" className="container px-6 py-16 max-w-screen-lg mx-auto">
       <h2
         className="text-4xl font-semibold text-center text-gray-900 mb-12"
         data-aos="fade-up"
@@ -99,4 +96,4 @@ const Competences = () => {
   );
 };
 
-export default Competences;
+export default Skills;
