@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/CV/static/css/main.d8a9e08c.css",
-    "main.js": "/CV/static/js/main.1a906238.js",
+    "main.css": "/CV/static/css/main.d3a7271f.css",
+    "main.js": "/CV/static/js/main.08ed6699.js",
     "static/js/660.26b5edcf.chunk.js": "/CV/static/js/660.26b5edcf.chunk.js",
-    "static/media/avatar1.jpg": "/CV/static/media/avatar1.f4a190eb25931b679b5f.jpg",
-    "static/media/cv-img.png": "/CV/static/media/cv-img.7dc423ef22d6f87b60a0.png",
+    "static/media/my-photo.jpg": "/CV/static/media/my-photo.f4a190eb25931b679b5f.jpg",
     "static/media/cv.png": "/CV/static/media/cv.9b6efcc5c5cb58e93b6d.png",
-    "static/media/CV-FARAMALALA.pdf": "/CV/static/media/CV-FARAMALALA.906cf8ebf6533ced6079.pdf",
+    "static/media/CV-FARAMALALA.pdf": "/CV/static/media/CV-FARAMALALA.9b68ca610ddc619d6ac7.pdf",
     "static/media/head.jpg": "/CV/static/media/head.bf7f91261e128c38ccb4.jpg",
     "static/media/harmony.jpg": "/CV/static/media/harmony.d4feda6ad5b69eae53b7.jpg",
     "index.html": "/CV/index.html",
-    "main.d8a9e08c.css.map": "/CV/static/css/main.d8a9e08c.css.map",
-    "main.1a906238.js.map": "/CV/static/js/main.1a906238.js.map",
+    "main.d3a7271f.css.map": "/CV/static/css/main.d3a7271f.css.map",
+    "main.08ed6699.js.map": "/CV/static/js/main.08ed6699.js.map",
     "660.26b5edcf.chunk.js.map": "/CV/static/js/660.26b5edcf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8a9e08c.css",
-    "static/js/main.1a906238.js"
+    "static/css/main.d3a7271f.css",
+    "static/js/main.08ed6699.js"
   ]
 }
