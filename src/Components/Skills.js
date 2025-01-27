@@ -63,7 +63,7 @@ const Skills = () => {
   };
 
   return (
-    <div id="Skills" className="container px-6 py-16 max-w-screen-lg mx-auto">
+    <div id="competences" className="container px-6 py-16 max-w-screen-lg mx-auto">
       <h2
         className="text-4xl font-semibold text-center text-gray-900 mb-12"
         data-aos="fade-up"
